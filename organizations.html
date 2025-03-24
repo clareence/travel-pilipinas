@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philippine Tourism Organizations</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #87CEEB, #1E90FF);
+            color: white;
+            text-align: center;
+        }
+
+        /* Section Styling */
+        #organizations {
+            padding: 80px 20px;
+        }
+
+        h2 {
+            font-size: 40px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        /* Organization List */
+        .org-list {
+            list-style: none;
+            padding: 0;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .org-list li {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            transition: 0.3s;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .org-list li:hover {
+            transform: scale(1.05);
+            background: rgba(255, 255, 255, 0.4);
+        }
+
+        .org-list img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <section id="organizations">
+        <h2>Philippine Tourism Organizations</h2>
+        <ul class="org-list">
+            <li>
+                <img src="tour.png" alt="DOT Logo">
+                <b>Department of Tourism (DOT)</b> - The main agency promoting Philippine tourism.
+            </li>
+            <li>
+                <img src="pbb.jpg" alt="TPB Logo">
+                <b>Tourism Promotions Board (TPB)</b> - Focuses on marketing and promotions.
+            </li>
+            <li>
+                <img src="toa.jpg" alt="PHILTOA Logo">
+                <b>Philippine Tour Operators Association (PHILTOA)</b> - Represents tour operators across the country.
+            </li>
+            <li>
+                <img src="rap.jpg" alt="HRAP Logo">
+                <b>Hotel and Restaurant Association of the Philippines (HRAP)</b> - Supports the hospitality industry.
+            </li>
+            <li>
+                <img src="pakk.png" alt="NPDC Logo">
+                <b>National Parks Development Committee (NPDC)</b> - Manages parks like Rizal Park.
+            </li>
+        </ul>
+    </section>
+
+</body>
+</html>

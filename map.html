@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Philippine Destinations</title>
+    <style>
+        body {
+            background-color: #87CEEB;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        h2 {
+            font-size: 40px;
+            color: white;
+            text-shadow: 2px 2px 4px black;
+        }
+
+        p {
+            font-size: 20px;
+            color: black;
+        }
+
+        /* Image map container */
+        .map-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Clickable areas styling */
+        .location {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 0, 0, 0.7);
+            border-radius: 50%;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .location:hover {
+            background-color: rgba(255, 0, 0, 1);
+            transform: scale(1.2);
+        }
+
+        
+        .boracay { top: 44%; left: 53%; }
+        .palawan { top: 55%; left: 30%; }
+        .cebu { top: 56%; left: 70%; }
+        .banaue { top: 20%; left: 50%; }
+        .samar { top: 46%; left: 80%; }
+		.tagaytay { top: 36%; left: 49%; }
+		.legazpi { top: 39%; left: 69%; }
+		.davao { top: 74%; left: 82%; }
+		.zamboanga { top: 74%; left: 57%; }
+    </style>
+</head>
+<body>
+
+    <h2>Explore Philippine Destinations</h2>
+    <p>Click on a tourist spot to learn more.</p>
+
+    <!-- Map Container -->
+    <div class="map-container">
+        <img src="mapz.avif" alt="Philippines Map" width="130%">
+        
+        <!-- Clickable Locations -->
+        <a href="https://guidetothephilippines.ph/articles/ultimate-guides/boracay-travel-guide" class="location boracay" title="Boracay"></a>
+        <a href="https://www.traveloka.com/en-ph/explore/destination/the-most-popular-tourist-spots-in-palawan-acc/254162" class="location palawan" title="Palawan"></a>
+        <a href="https://www.traveloka.com/en-ph/explore/destination/10-best-experiences-in-cebu-acc/250135" class="location cebu" title="Cebu"></a>
+        <a href="https://www.tripadvisor.com.ph/Attractions-g294249-Activities-Banaue_Ifugao_Province_Cordillera_Region_Luzon.html" class="location banaue" title="Banaue Rice Terraces"></a>
+        <a href="https://samar.lgu-ph.com/tourism.htm" class="location samar" title="Samar"></a>
+		<a href="https://tagaytayto.com/" class="location tagaytay" title="tagaytay"></a>
+		<a href="https://legazpi.gov.ph/legazpi-city-tourist-attractions/" class="location legazpi" title="legazpi"></a>
+		<a href="https://www.tripadvisor.com.ph/Attractions-g298459-Activities-Davao_City_Davao_del_Sur_Province_Mindanao.html" class="location davao" title="davao"></a>
+		<a href="https://www.traveloka.com/en-ph/explore/destination/exploring-the-top-tourist-spots-in-zamboanga-philippines-acc/261461" class="location zamboanga" title="zamboanga"></a>
+    </div>
+
+</body>
+</html>
